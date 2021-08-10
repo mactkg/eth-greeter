@@ -1,4 +1,4 @@
-pragma solidity >=0.4.0 <0.7.0;
+pragma solidity ^0.8.0;
 
 contract Greeter {
     string private _greeting = "Hello, World!";
