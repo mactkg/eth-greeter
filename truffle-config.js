@@ -113,4 +113,5 @@ module.exports = {
     //   }
     // }
   // }
+  contracts_build_directory: "./client/src/contracts",
 };
