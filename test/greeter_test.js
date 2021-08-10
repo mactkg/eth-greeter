@@ -15,3 +15,17 @@ contract("Greeter", () => {
         });
     });
 });
+
+contract("Greeter: update greeting", () => {
+    describe('setGreeting(string)', () => {
+        it('sets greeting to passed in string', async () => {
+            const greeter = await GreeterContract.deployed()
+            const expected = "Hi there!";
+            await greeter.setGreeting(expected);
+
+            const actual = await greeter.greet();
+            assert.equal(actual, expected, "greeting was not updated");
+        
+        });
+    });
+})
